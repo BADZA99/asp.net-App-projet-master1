@@ -1,0 +1,15 @@
+COUR 14 DEC 2024
+
+CODE FIRST STEPS
+
+1.connextion string in web.config and create db in postgess(user=postgess mp=passer)
+2- create BdAgenceVoyageContext class in models directory
+3-terminal tap Enable-Migrations -ContextTypeName BdAgenceVoyageContext
+4-create first entity in models directory (chauffeur add attibutes and get/set)
+5-terminal tap  Update-Database -Verbose(Verbose to see sql queries)
+
+TAF
+definition de donnee de reference et table de reference pour une app d'agence de voyage
+Les données de référence sont des informations statiques ou rarement modifiées qui sont utilisées pour catégoriser ou décrire d'autres données dans le système. Elles servent de point de référence pour assurer la cohérence et l'intégrité des données.
+
+Une table de référence est une table de base de données qui contient des données statiques ou rarement modifiées. Ces données sont utilisées pour catégoriser ou décrire d'autres données dans le système. Les tables de référence servent de point de référence pour assurer la cohérence et l'intégrité des données dans l'application.
