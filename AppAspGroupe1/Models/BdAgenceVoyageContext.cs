@@ -14,5 +14,13 @@ namespace AppAspGroupe1.Models
         }
 
         public DbSet <Chauffeur> Chauffeurs { get; set; }
+
+        public DbSet<Utilisateur> utilisateurs { get; set; }
+        public DbSet<Gestionnaire> gestionnaires { get; set; }
+        public DbSet<Client> clients { get; set; }
+        public DbSet<Admin> admins { get; set; }
+
+
+
     }
 }

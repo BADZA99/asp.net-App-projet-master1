@@ -1,4 +1,4 @@
-COUR 14 DEC 2024
+// ? COUR 14 DEC 2024
 
 CODE FIRST STEPS
 
@@ -13,3 +13,26 @@ definition de donnee de reference et table de reference pour une app d'agence de
 Les données de référence sont des informations statiques ou rarement modifiées qui sont utilisées pour catégoriser ou décrire d'autres données dans le système. Elles servent de point de référence pour assurer la cohérence et l'intégrité des données.
 
 Une table de référence est une table de base de données qui contient des données statiques ou rarement modifiées. Ces données sont utilisées pour catégoriser ou décrire d'autres données dans le système. Les tables de référence servent de point de référence pour assurer la cohérence et l'intégrité des données dans l'application.
+
+// ? COUR 4 Janvier 2024
+ajout des classes utilisateur,admin,client,gestionnaire dans le dossier model 
+mia a jour fichier BdAgenceVoyageContext avec les nouvelles classes
+mise a jour de la base de donnee avec la commande Update-Database -Verbose
+
+//TODO ROLE COLONNE DISCRIMINANT DANS POSTGRESQL
+La colonne Discriminator dans la table Utilisateur est utilisée pour la gestion de l'héritage dans Entity Framework. Lorsque vous utilisez l'héritage dans vos modèles, Entity Framework utilise une stratégie appelée "Table per Hierarchy" (TPH) pour mapper les classes dérivées à une seule table de base de données.
+
+ Lorsqu'une entité est insérée dans la table, Entity Framework ajoute une valeur dans la colonne Discriminator pour indiquer le type exact de l'entité. Par exemple, si vous avez des classes Utilisateur, Gestionnaire, Client, et Admin qui héritent de Utilisateur, la colonne Discriminator contiendra des valeurs comme "Utilisateur", "Gestionnaire", "Client", ou "Admin"
+
+//TODO recommendation postgresql pour projet au lieu de mysql
+
+Comparaison
+MySQL :
+
+Une base de données est une collection de tables.
+Le terme "schéma" est souvent utilisé de manière interchangeable avec "base de données".
+PostgreSQL :
+
+Une base de données est une collection de schémas.
+Un schéma est un espace de noms au sein d'une base de données, permettant de mieux organiser les objets.
+
